@@ -13,3 +13,4 @@ def add_score():
 
 @app.route('/scoreboard', methods=['GET'])
 def scoreboard():
+    return 0
