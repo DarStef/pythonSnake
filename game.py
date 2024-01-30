@@ -3,11 +3,11 @@ import random
 import pygame
 
 tail = pygame.Vector2(0, 0)
-ia_tail = [0, 0]
+
 
 def move(player_pos, rotation, body, game_mode):
     if 640 >= player_pos.x >= 40 and 640 >= player_pos.y >= 40 and game_mode == 0:
-        snake(player_pos - [0, 0], body)
+        snake(player_pos, body)
         player_pos += rotation
     else:
         return 1
